@@ -1,0 +1,8 @@
+- name: install
+  apt:
+    name: "{{ item }}"
+    state: latest
+    force: yes
+  with_items:
+    - nodejs-legacy
+    - npm
